@@ -9,7 +9,7 @@ if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
 
-from PyQt6.QtWidgets import *
+from PyQt6.QtWidgets import QWidget, QApplication, QPushButton, QHBoxLayout
 from constructGUI import construct
 
 class Window(QWidget):
