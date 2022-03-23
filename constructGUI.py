@@ -1,5 +1,6 @@
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QFont
+from PyQt6.QtWidgets import QFrame
 
 import yaml
 
@@ -57,7 +58,22 @@ def construct(x, yaml_file, settings):
                 elif alignment_str == 'right':
                     x.setAlignment(Qt.AlignmentFlag.AlignLeft)
             ##アライメントの設定
-        
+
+            ##枠線の設定
+            if 'box' in settings_dict.keys():
+
+                box_type = settings_dict['box']
+
+                if box_type == 1:
+                    x.setFrameStyle(QFrame.Shape.Box.value)
+
+                elif box_type == 2:
+                    x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Raised.value)
+                
+                elif box_type == 3:
+                    x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Sunken.value)
+                ##枠線の設定
+                
         elif settings_dict['type'] == 'QPushButton':
             
             ##サイズの設定

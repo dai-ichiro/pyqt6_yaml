@@ -9,7 +9,7 @@ if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
 
-from PyQt6.QtWidgets import QWidget, QApplication, QPushButton, QHBoxLayout
+from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QFrame
 from constructGUI import construct
 
 class Window(QWidget):
@@ -21,13 +21,17 @@ class Window(QWidget):
     def initUI(self):
         self.setWindowTitle("sample")
 
-        self.start_button = construct(QPushButton(), 'settings.yaml', 'button_1')
-        self.end_button = construct(QPushButton(), 'settings.yaml', 'button_2')
-        
-        layout = QHBoxLayout()
-        layout.addWidget(self.start_button)
-        layout.addWidget(self.end_button)
-        
+        self.label_1 = construct(QLabel(), 'settings.yaml', 'label_1')
+        self.label_2 = construct(QLabel(), 'settings.yaml', 'label_2')
+        self.label_3 = construct(QLabel(), 'settings.yaml', 'label_3')
+        self.label_4 = construct(QLabel(), 'settings.yaml', 'label_4')
+
+        layout = QVBoxLayout()
+        layout.addWidget(self.label_1)
+        layout.addWidget(self.label_2)
+        layout.addWidget(self.label_3)
+        layout.addWidget(self.label_4)
+
         self.setLayout(layout)
 
 if __name__ == "__main__":

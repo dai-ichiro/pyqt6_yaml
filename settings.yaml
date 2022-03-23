@@ -6,7 +6,8 @@ label_1:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: start
+  text: test
+
 label_2:
   type: QLabel
   width: 300
@@ -14,24 +15,31 @@ label_2:
   alignment: center
   fontFamily: times
   fontPoint: 40
-  fontBold: False
-  text: end
-button_1:
-  type: QPushButton
-  width: 200
+  fontBold: True
+  box: 1
+  text: test
+
+label_3:
+  type: QLabel
+  width: 300
   height: 100
+  alignment: center
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: start
-button_2:
-  type: QPushButton
-  width: 200
+  box: 2
+  text: test
+
+label_4:
+  type: QLabel
+  width: 300
   height: 100
+  alignment: center
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: end
+  box: 3
+  text: test
 
 #label:
 #  type: QLabel
@@ -41,6 +49,7 @@ button_2:
 #  fontFamily: times
 #  fontPoint: 40
 #  fontBold: True
+#  box: 1  #(1 or 2 or 3)
 #  text: start
 
 #button:
