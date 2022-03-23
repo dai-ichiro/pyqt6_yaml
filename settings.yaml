@@ -41,6 +41,14 @@ label_4:
   box: 3
   text: test
 
+slider_1:
+  type: QSlider
+  orientation: h #(h or v)
+  max: 50
+  min: 0
+  default: 25
+
+
 #label:
 #  type: QLabel
 #  width: 300
@@ -61,3 +69,9 @@ label_4:
 #  fontBold: False
 #  text: start
 
+#slider:
+#  type: QSlider
+#  orientation: h  #(h or v)
+#  max: 100
+#  min: 0
+#  default: 50

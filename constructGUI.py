@@ -104,5 +104,30 @@ def construct(x, yaml_file, settings):
             if 'text' in settings_dict.keys():
                 x.setText(settings_dict['text'])
             ##テキストの設定
+        
+        elif settings_dict['type'] == 'QSlider':
 
+            ##オリエンテーションの設定
+            if 'orientation' in settings_dict.keys():
+
+                orientation_type = settings_dict['orientation']
+
+                if orientation_type == 'h':
+                    x.setOrientation(Qt.Orientation.Horizontal)
+                
+                elif orientation_type == 'v':
+                    x.setOrientation(Qt.Orientation.Vertical)
+            ##オリエンテーションの設定
+
+            ##値の設定
+            if 'max' in settings_dict.keys():
+                x.setMaximum(settings_dict['max'])
+            
+            if 'min' in settings_dict.keys():
+                x.setMinimum(settings_dict['min'])
+
+            if 'default' in settings_dict.keys():
+                x.setValue(settings_dict['default'])
+            ##値の設定
+            
     return x
