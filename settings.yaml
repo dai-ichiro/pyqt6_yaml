@@ -2,37 +2,10 @@ label_1:
   type: QLabel
   width: 512
   height: 512
-  #alignment: center
-  #fontFamily: times
-  #fontPoint: 40
-  #fontBold: True
-  #text: start
+  box: 1
 
 button_1:
   type: QPushButton
-  #width: 200
-  #height: 100
   fontFamily: times
-  fontPoint: 10
   fontBold: True
-  text: select image file
-
-#label:
-#  type: QLabel
-#  width: 300
-#  height: 100
-#  alignment: center
-#  fontFamily: times
-#  fontPoint: 40
-#  fontBold: True
-#  text: start
-
-#button:
-#  type: QPushButton
-#  width: 200
-#  height: 100
-#  fontFamily: times
-#  fontPoint: 40
-#  fontBold: False
-#  text: start
-
+  text: Open Img
