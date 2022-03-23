@@ -44,9 +44,9 @@ label_4:
 slider_1:
   type: QSlider
   orientation: h #(h or v)
-  max: 50
+  max: 3
   min: 0
-  default: 25
+  default: 0
 
 
 #label:

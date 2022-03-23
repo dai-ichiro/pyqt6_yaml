@@ -9,7 +9,7 @@ if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
 
-from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QFrame
+from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QFrame, QSlider
 from constructGUI import construct
 
 class Window(QWidget):
@@ -23,14 +23,12 @@ class Window(QWidget):
 
         self.label_1 = construct(QLabel(), 'settings.yaml', 'label_1')
         self.label_2 = construct(QLabel(), 'settings.yaml', 'label_2')
-        self.label_3 = construct(QLabel(), 'settings.yaml', 'label_3')
-        self.label_4 = construct(QLabel(), 'settings.yaml', 'label_4')
+        self.slider_1 = construct(QSlider(), 'settings.yaml', 'slider_1')
 
         layout = QVBoxLayout()
         layout.addWidget(self.label_1)
         layout.addWidget(self.label_2)
-        layout.addWidget(self.label_3)
-        layout.addWidget(self.label_4)
+        layout.addWidget(self.slider_1)
 
         self.setLayout(layout)
 
