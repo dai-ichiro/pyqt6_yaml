@@ -9,9 +9,9 @@ if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
 
-from PyQt6 import QtCore
+from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QVBoxLayout, QFileDialog
-from PyQt6.QtGui import QImage, QPixmap
+from PyQt6.QtGui import QPixmap
 
 from constructGUI import construct
 
@@ -42,9 +42,9 @@ class Window(QWidget):
         # fname[0]は選択したファイルのパス（ファイル名を含む）
         if fname[0]:
             # 画像の読み込み, サイズ変更
-            image = QImage(fname[0]).scaled(self.img_label1.size(),QtCore.Qt.AspectRatioMode.KeepAspectRatio) 
+            image = QPixmap(fname[0]).scaled(self.img_label1.size(), Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation) 
             # 画像の表示
-            self.img_label1.setPixmap(QPixmap.fromImage(image))
+            self.img_label1.setPixmap(image)
 
 if __name__ == "__main__":
     app = QApplication([])
