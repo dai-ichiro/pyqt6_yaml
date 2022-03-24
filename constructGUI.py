@@ -65,18 +65,29 @@ def construct(x, yaml_file, settings):
             ##枠線の設定（線の太さ)
 
             ##枠線の設定（ボックスタイプと影）
-            if 'box' in settings_dict.keys():
+            if ('shape' in settings_dict.keys() and 'shadow' in settings_dict.keys()):
 
-                box_type = settings_dict['box']
+                if settings_dict['shape'] == 'box':
 
-                if box_type == 1:
-                    x.setFrameStyle(QFrame.Shape.Box.value)
+                    if settings_dict['shadow'] == 'plain':
+                        x.setFrameStyle(QFrame.Shape.Box.value | QFrame.Shadow.Plain.value)
+                    
+                    elif settings_dict['shadow'] == 'raised':
+                        x.setFrameStyle(QFrame.Shape.Box.value | QFrame.Shadow.Raised.value)
 
-                elif box_type == 2:
-                    x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Raised.value)
-                
-                elif box_type == 3:
-                    x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Sunken.value)
+                    elif settings_dict['shadow'] == 'sunken':
+                        x.setFrameStyle(QFrame.Shape.Box.value | QFrame.Shadow.Sunken.value)
+
+                elif settings_dict['shape'] == 'panel':
+
+                    if settings_dict['shadow'] == 'plain':
+                        x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Plain.value)
+                    
+                    elif settings_dict['shadow'] == 'raised':
+                        x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Raised.value)
+
+                    elif settings_dict['shadow'] == 'sunken':
+                        x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Sunken.value)
             ##枠線の設定（ボックスタイプと影）
                 
         elif settings_dict['type'] == 'QPushButton':

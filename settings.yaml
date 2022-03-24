@@ -6,7 +6,7 @@ label_1:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: test
+  text: start
 
 label_2:
   type: QLabel
@@ -16,8 +16,10 @@ label_2:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  box: 1
-  text: test
+  linewidth: 10 
+  shape: box #(box or panel)
+  shadow: plain #(plain or raised or sunken)
+  text: start
 
 label_3:
   type: QLabel
@@ -27,8 +29,10 @@ label_3:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  box: 2
-  text: test
+  linewidth: 10 
+  shape: box #(box or panel)
+  shadow: raised #(plain or raised or sunken)
+  text: start
 
 label_4:
   type: QLabel
@@ -38,16 +42,49 @@ label_4:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  box: 3
-  text: test
+  linewidth: 10 
+  shape: box #(box or panel)
+  shadow: sunken #(plain or raised or sunken)
+  text: start
 
-slider_1:
-  type: QSlider
-  orientation: h #(h or v)
-  max: 3
-  min: 0
-  default: 0
+label_5:
+  type: QLabel
+  width: 300
+  height: 100
+  alignment: center
+  fontFamily: times
+  fontPoint: 40
+  fontBold: True
+  linewidth: 10 
+  shape: panel #(box or panel)
+  shadow: plain #(plain or raised or sunken)
+  text: start
 
+label_6:
+  type: QLabel
+  width: 300
+  height: 100
+  alignment: center
+  fontFamily: times
+  fontPoint: 40
+  fontBold: True
+  linewidth: 10 
+  shape: panel #(box or panel)
+  shadow: raised #(plain or raised or sunken)
+  text: start
+
+label_7:
+  type: QLabel
+  width: 300
+  height: 100
+  alignment: center
+  fontFamily: times
+  fontPoint: 40
+  fontBold: True
+  linewidth: 10 
+  shape: panel #(box or panel)
+  shadow: sunken #(plain or raised or sunken)
+  text: start
 
 #label:
 #  type: QLabel
@@ -57,7 +94,9 @@ slider_1:
 #  fontFamily: times
 #  fontPoint: 40
 #  fontBold: True
-#  box: 1  #(1 or 2 or 3)
+#  linewidth: 5
+#  shape: box #(box or panel)
+#  shadow: raised #(plain or raised or sunken)
 #  text: start
 
 #button:
