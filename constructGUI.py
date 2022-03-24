@@ -123,6 +123,15 @@ def construct(x, yaml_file, settings):
         
         elif settings_dict['type'] == 'QSlider':
 
+            ##サイズの設定
+            if ('height' in settings_dict.keys() and 'width' in settings_dict.keys()):
+
+                h = settings_dict['height']
+                w = settings_dict['width']
+
+                x.setFixedSize(QSize(w, h))
+            ##サイズの設定
+            
             ##オリエンテーションの設定
             if 'orientation' in settings_dict.keys():
 
