@@ -8,6 +8,7 @@ fname = os.path.basename(url)
 if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
+
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QWidget, QApplication, QSlider, QVBoxLayout, QFrame
 from constructGUI import construct

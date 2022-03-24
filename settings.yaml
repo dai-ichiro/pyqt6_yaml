@@ -1,6 +1,6 @@
 slider_1:
   type: QSlider
-  width: 800
+  width: 300
   height: 100
   orientation: h  #(h or v)
   max: 100
