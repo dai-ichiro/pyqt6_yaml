@@ -59,7 +59,12 @@ def construct(x, yaml_file, settings):
                     x.setAlignment(Qt.AlignmentFlag.AlignLeft)
             ##アライメントの設定
 
-            ##枠線の設定
+            ##枠線の設定（線の太さ)
+            if 'linewidth' in settings_dict.keys():
+                x.setLineWidth(settings_dict['linewidth'])
+            ##枠線の設定（線の太さ)
+
+            ##枠線の設定（ボックスタイプと影）
             if 'box' in settings_dict.keys():
 
                 box_type = settings_dict['box']
@@ -72,7 +77,7 @@ def construct(x, yaml_file, settings):
                 
                 elif box_type == 3:
                     x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Sunken.value)
-                ##枠線の設定
+            ##枠線の設定（ボックスタイプと影）
                 
         elif settings_dict['type'] == 'QPushButton':
             
