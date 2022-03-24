@@ -1,12 +1,64 @@
 slider_1:
   type: QSlider
-  width: 300
-  height: 30
+  orientation: h  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+
+slider_2:
+  type: QSlider
   orientation: h  #(h or v)
   max: 4
   min: 0
   default: 2
   tickposition: above  #(above, below, left, right, both)  
+
+slider_3:
+  type: QSlider
+  orientation: h  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: below  #(above, below, left, right, both)  
+
+slider_4:
+  type: QSlider
+  orientation: h  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: both  #(above, below, left, right, both)  
+
+slider_5:
+  type: QSlider
+  orientation: v  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+
+slider_6:
+  type: QSlider
+  orientation: v  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: left  #(above, below, left, right, both)  
+
+slider_7:
+  type: QSlider
+  orientation: v  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: right  #(above, below, left, right, both)  
+
+slider_8:
+  type: QSlider
+  orientation: v  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: both  #(above, below, left, right, both)  
 
 #label:
 #  type: QLabel
@@ -38,3 +90,4 @@ slider_1:
 #  max: 100
 #  min: 0
 #  default: 50
+#  tickposition: above  #(above, below, left, right, both)  

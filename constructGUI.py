@@ -1,6 +1,6 @@
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QFont
-from PyQt6.QtWidgets import QFrame
+from PyQt6.QtWidgets import QFrame, QSlider
 
 import yaml
 
@@ -154,5 +154,26 @@ def construct(x, yaml_file, settings):
             if 'default' in settings_dict.keys():
                 x.setValue(settings_dict['default'])
             ##値の設定
-            
+
+            ##目盛りの設定
+            if 'tickposition' in settings_dict.keys():
+                tickposition = settings_dict['tickposition']
+
+                if tickposition == 'both':
+                    x.setTickPosition(QSlider.TickPosition.TicksBothSides)
+                
+                elif tickposition == 'above':
+                    x.setTickPosition(QSlider.TickPosition.TicksAbove)
+                
+                elif tickposition == 'below':
+                    x.setTickPosition(QSlider.TickPosition.TicksBelow)
+
+                elif tickposition == 'left':
+                    x.setTickPosition(QSlider.TickPosition.TicksLeft)
+                
+                elif tickposition == 'right':
+                    x.setTickPosition(QSlider.TickPosition.TicksRight)
+            ##目盛りの設定
+
+
     return x
