@@ -1,90 +1,12 @@
-label_1:
-  type: QLabel
+slider_1:
+  type: QSlider
   width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  text: start
-
-label_2:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: plain #(plain or raised or sunken)
-  text: start
-
-label_3:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: raised #(plain or raised or sunken)
-  text: start
-
-label_4:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: sunken #(plain or raised or sunken)
-  text: start
-
-label_5:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: plain #(plain or raised or sunken)
-  text: start
-
-label_6:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: raised #(plain or raised or sunken)
-  text: start
-
-label_7:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: sunken #(plain or raised or sunken)
-  text: start
+  height: 30
+  orientation: h  #(h or v)
+  max: 4
+  min: 0
+  default: 2
+  tickposition: above  #(above, below, left, right, both)  
 
 #label:
 #  type: QLabel
@@ -96,7 +18,7 @@ label_7:
 #  fontBold: True
 #  linewidth: 5
 #  shape: box #(box or panel)
-#  shadow: raised #(plain or raised or sunken)
+#  shadow: raised #(plain, raised or sunken)
 #  text: start
 
 #button:
@@ -110,6 +32,8 @@ label_7:
 
 #slider:
 #  type: QSlider
+#  width: 200
+#  height: 100
 #  orientation: h  #(h or v)
 #  max: 100
 #  min: 0
