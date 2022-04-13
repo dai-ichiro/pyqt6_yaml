@@ -9,7 +9,7 @@ if not os.path.isfile(fname):
     urlretrieve(url, fname)
 '''
 
-from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QFrame, QSlider
+from PyQt6.QtWidgets import QWidget, QApplication, QPushButton, QHBoxLayout
 from constructGUI import construct
 
 class Window(QWidget):
@@ -21,14 +21,22 @@ class Window(QWidget):
     def initUI(self):
         self.setWindowTitle("sample")
 
-        self.label_1 = construct(QLabel(), 'settings.yaml', 'label_1')
-        self.label_2 = construct(QLabel(), 'settings.yaml', 'label_2')
-        self.slider_1 = construct(QSlider(), 'settings.yaml', 'slider_1')
+        self.button_1 = construct(QPushButton(), 'settings.yml', 'button_1')
+        self.button_2 = construct(QPushButton(), 'settings.yml', 'button_1')
 
-        layout = QVBoxLayout()
-        layout.addWidget(self.label_1)
-        layout.addWidget(self.label_2)
-        layout.addWidget(self.slider_1)
+        self.button_1.setStyleSheet(
+            "QPushButton {border-radius : 30; border : 2px solid black; background-color: rgb(148, 148, 254)}"
+            "QPushButton:pressed {background-color: rgb(100, 100, 232)}"
+            )
+
+        self.button_2.setStyleSheet(
+            "QPushButton {border-radius : 30; border : 2px solid black; background-color: rgb(254, 254, 100)}"
+            "QPushButton:pressed {background-color: rgb(210, 210, 60)}"
+            )
+
+        layout = QHBoxLayout()
+        layout.addWidget(self.button_1)
+        layout.addWidget(self.button_2)
 
         self.setLayout(layout)
 
