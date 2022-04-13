@@ -7,6 +7,7 @@ label_1:
   fontPoint: 40
   fontBold: True
   text: start
+  color: red
 
 label_2:
   type: QLabel
@@ -16,10 +17,8 @@ label_2:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: plain #(plain or raised or sunken)
   text: start
+  background-color: yellow
 
 label_3:
   type: QLabel
@@ -29,62 +28,9 @@ label_3:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: raised #(plain or raised or sunken)
   text: start
-
-label_4:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: box #(box or panel)
-  shadow: sunken #(plain or raised or sunken)
-  text: start
-
-label_5:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: plain #(plain or raised or sunken)
-  text: start
-
-label_6:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: raised #(plain or raised or sunken)
-  text: start
-
-label_7:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  linewidth: 10 
-  shape: panel #(box or panel)
-  shadow: sunken #(plain or raised or sunken)
-  text: start
+  color: red
+  background-color: yellow
 
 #label:
 #  type: QLabel
@@ -98,6 +44,8 @@ label_7:
 #  shape: box #(box or panel)
 #  shadow: raised #(plain or raised or sunken)
 #  text: start
+#  color: red
+#  background-color: yellow
 
 #button:
 #  type: QPushButton
