@@ -1,3 +1,4 @@
+from turtle import color
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import QFrame, QSlider
@@ -89,7 +90,18 @@ def construct(x, yaml_file, settings):
                     elif settings_dict['shadow'] == 'sunken':
                         x.setFrameStyle(QFrame.Shape.Panel.value | QFrame.Shadow.Sunken.value)
             ##枠線の設定（ボックスタイプと影）
-                
+
+            ##色の設定
+            color_list = []
+            if 'color' in settings_dict.keys():
+                color_list.append('color: %s'%settings_dict['color'])
+            if 'background-color' in settings_dict.keys():
+                color_list.append('background-color: %s'%settings_dict['background-color'])
+
+            if len(color_list) > 0:
+                x.setStyleSheet(';'.join(color_list))
+            ##色の設定
+
         elif settings_dict['type'] == 'QPushButton':
             
             ##サイズの設定
