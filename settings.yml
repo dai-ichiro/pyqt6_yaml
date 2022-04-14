@@ -1,16 +1,3 @@
-label_1:
-  type: QLabel
-  width: 300
-  height: 100
-  alignment: center
-  fontFamily: times
-  fontPoint: 40
-  fontBold: True
-  text: start
-  color: red
-  color: red
-  background-color: yellow
-
 button_1:
   type: QPushButton
   width: 300
@@ -18,8 +5,16 @@ button_1:
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: start
+  text: button
 
+circle_button:
+  type: QPushButton
+  width: 100
+  height: 100
+  fontFamily: times
+  fontPoint: 20
+  fontBold: True
+  text: button
 
 #label:
 #  type: QLabel
