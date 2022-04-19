@@ -1,20 +1,26 @@
-button_1:
-  type: QPushButton
+label_1:
   width: 300
   height: 100
+  alignment: center
   fontFamily: times
   fontPoint: 40
   fontBold: True
-  text: button
+  linewidth: 10
+  shape: panel #(box or panel)
+  shadow: raised #(plain or raised or sunken)
+  text: start
 
-circle_button:
-  type: QPushButton
-  width: 100
+label_2:
+  width: 300
   height: 100
+  alignment: center
   fontFamily: times
-  fontPoint: 20
+  fontPoint: 40
   fontBold: True
-  text: button
+  linewidth: 10
+  shape: panel #(box or panel)
+  shadow: sunken #(plain or raised or sunken)
+  text: end
 
 #label:
 #  type: QLabel
@@ -46,3 +52,4 @@ circle_button:
 #  max: 100
 #  min: 0
 #  default: 50
+#  tickposition: both #(both, above, below, left, right)
