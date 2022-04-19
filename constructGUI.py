@@ -55,7 +55,7 @@ def construct(x, yaml_file, settings):
                 elif alignment_str == 'right':
                     x.setAlignment(Qt.AlignmentFlag.AlignRight)
 
-                elif alignment_str == 'right':
+                elif alignment_str == 'left':
                     x.setAlignment(Qt.AlignmentFlag.AlignLeft)
             ##アライメントの設定
 
