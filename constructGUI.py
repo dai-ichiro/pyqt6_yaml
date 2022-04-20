@@ -186,5 +186,4 @@ def construct(x, yaml_file, settings):
                     x.setTickPosition(QSlider.TickPosition.TicksRight)
             ##目盛りの設定
 
-
     return x
