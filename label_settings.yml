@@ -1,0 +1,23 @@
+label_1:
+  width: 300
+  height: 100
+  alignment: center
+  fontFamily: times
+  fontPoint: 40
+  fontBold: True
+  linewidth: 10
+  shape: panel #(box or panel)
+  shadow: raised #(plain or raised or sunken)
+  text: start
+
+label_2:
+  width: 300
+  height: 100
+  alignment: center
+  fontFamily: times
+  fontPoint: 40
+  fontBold: True
+  linewidth: 10
+  shape: panel #(box or panel)
+  shadow: sunken #(plain or raised or sunken)
+  text: end
