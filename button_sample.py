@@ -2,7 +2,7 @@
 import os
 from urllib.request import urlretrieve
 
-url = 'https://raw.githubusercontent.com/dai-ichiro/pyqt6_yaml/main/constructGUI.py'
+url = 'https://raw.githubusercontent.com/dai-ichiro/pyqt6_yaml/main/qtyaml.py'
 fname = os.path.basename(url)
 
 if not os.path.isfile(fname):
@@ -11,7 +11,7 @@ if not os.path.isfile(fname):
 
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QWidget, QApplication, QPushButton, QGridLayout
-from constructGUI import construct
+from qtyaml import PushButton
 
 class Window(QWidget):
 
@@ -22,21 +22,21 @@ class Window(QWidget):
     def initUI(self):
         self.setWindowTitle("button sample")
 
-        self.button_1 = construct(QPushButton(), 'settings.yml', 'button_1')
-        self.button_2 = construct(QPushButton(), 'settings.yml', 'button_1')
-        self.button_3 = construct(QPushButton(), 'settings.yml', 'button_1')
+        self.button_1 = PushButton('button_settings.yml', 'button_1')
+        self.button_2 = PushButton('button_settings.yml', 'button_1')
+        self.button_3 = PushButton('button_settings.yml', 'button_1')
 
-        self.button_4 = construct(QPushButton(), 'settings.yml', 'button_1')
-        self.button_5 = construct(QPushButton(), 'settings.yml', 'button_1')
-        self.button_6 = construct(QPushButton(), 'settings.yml', 'button_1')
+        self.button_4 = PushButton('button_settings.yml', 'button_1')
+        self.button_5 = PushButton('button_settings.yml', 'button_1')
+        self.button_6 = PushButton('button_settings.yml', 'button_1')
 
-        self.button_7 = construct(QPushButton(), 'settings.yml', 'circle_button')
-        self.button_8 = construct(QPushButton(), 'settings.yml', 'circle_button')
-        self.button_9 = construct(QPushButton(), 'settings.yml', 'circle_button')
+        self.button_7 = PushButton('button_settings.yml', 'circle_button')
+        self.button_8 = PushButton('button_settings.yml', 'circle_button')
+        self.button_9 = PushButton('button_settings.yml', 'circle_button')
 
-        self.button_10 = construct(QPushButton(), 'settings.yml', 'circle_button')
-        self.button_11 = construct(QPushButton(), 'settings.yml', 'circle_button')
-        self.button_12 = construct(QPushButton(), 'settings.yml', 'circle_button')
+        self.button_10 = PushButton('button_settings.yml', 'circle_button')
+        self.button_11 = PushButton('button_settings.yml', 'circle_button')
+        self.button_12 = PushButton('button_settings.yml', 'circle_button')
 
         self.button_1.setStyleSheet(
             "QPushButton {border-radius : 30; border : 2px solid black; background-color: rgb(148, 148, 254)}"
@@ -63,27 +63,27 @@ class Window(QWidget):
             "QPushButton:pressed {background-color: rgb(210, 80, 80)}")
 
         self.button_7.setStyleSheet(
-            "QPushButton {border-radius : 50; border : 2px solid black; background-color: rgb(148, 148, 254)}"
+            "QPushButton {border-radius : 75; border : 2px solid black; background-color: rgb(148, 148, 254)}"
             "QPushButton:pressed {background-color: rgb(100, 100, 232)}")
         
         self.button_8.setStyleSheet(
-            "QPushButton {border-radius : 50; border : 2px solid black; background-color: rgb(254, 254, 100)}"
+            "QPushButton {border-radius : 75; border : 2px solid black; background-color: rgb(254, 254, 100)}"
             "QPushButton:pressed {background-color: rgb(210, 210, 60)}")
         
         self.button_9.setStyleSheet(
-            "QPushButton {border-radius : 50; border : 2px solid black; background-color: rgb(255, 108, 108)}"
+            "QPushButton {border-radius : 75; border : 2px solid black; background-color: rgb(255, 108, 108)}"
             "QPushButton:pressed {background-color: rgb(210, 80, 80)}")
         
         self.button_10.setStyleSheet(
-            "QPushButton {border-radius : 50; color: white; background-color: rgb(148, 148, 254)}"
+            "QPushButton {border-radius : 75; color: white; background-color: rgb(148, 148, 254)}"
             "QPushButton:pressed {background-color: rgb(100, 100, 232)}")
         
         self.button_11.setStyleSheet(
-            "QPushButton {border-radius : 50; color: white; background-color: rgb(254, 254, 100)}"
+            "QPushButton {border-radius : 75; color: white; background-color: rgb(254, 254, 100)}"
             "QPushButton:pressed {background-color: rgb(210, 210, 60)}")
         
         self.button_12.setStyleSheet(
-            "QPushButton {border-radius : 50; color: white; background-color: rgb(255, 108, 108)}"
+            "QPushButton {border-radius : 75; color: white; background-color: rgb(255, 108, 108)}"
             "QPushButton:pressed {background-color: rgb(210, 80, 80)}")
 
         layout = QGridLayout()

@@ -1,0 +1,17 @@
+button_1:
+  type: QPushButton
+  width: 400
+  height: 150
+  fontFamily: times
+  fontPoint: 48
+  fontBold: True
+  text: button
+
+circle_button:
+  type: QPushButton
+  width: 150
+  height: 150
+  fontFamily: times
+  fontPoint: 24
+  fontBold: True
+  text: button
